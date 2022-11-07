@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StellantisCarApp</string>
+    <string name="my_cars_text_menu">Meus carros</string>
+    <string name="chargers_text_menu">Recarga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_maintanence">Última manutenção:</string>
+    <string name="submit">Cadastrar veículo</string>
+    <string name="name_car_hint">Nome do veículo</string>
+    <string name="manufacturer_name">Nome do fabricante</string>
+    <string name="save">Salvar</string>
+    <string name="last_maintenance">Data da última manutenção</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="empty_list_text">Lista vazia</string>
+</resources>

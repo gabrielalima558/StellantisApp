@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.stellantiscarapp.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_listCarsFragment"
+            app:destination="@id/listCarsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listChargerFragment"
+            app:destination="@id/listChargerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCarsFragment"
+        android:name="com.example.stellantiscarapp.listcars.ListCarsFragment"
+        android:label="fragment_list_cars"
+        tools:layout="@layout/fragment_list_cars" >
+        <action
+            android:id="@+id/action_listCarsFragment_to_newCarFragment"
+            app:destination="@id/newCarFragment" />
+        <action
+            android:id="@+id/action_listCarsFragment_to_detailCarFragment"
+            app:destination="@id/detailCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCarFragment"
+        android:name="com.example.stellantiscarapp.newcar.NewCarFragment"
+        android:label="fragment_new_car"
+        tools:layout="@layout/fragment_new_car" >
+        <action
+            android:id="@+id/action_newCarFragment_to_listCarsFragment"
+            app:destination="@id/listCarsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCarFragment"
+        android:name="com.example.stellantiscarapp.detail.DetailCarFragment"
+        android:label="DetailCarFragment" >
+        <argument
+            android:name="car_name"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailCarFragment_to_listCarsFragment"
+            app:destination="@id/listCarsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listChargerFragment"
+        android:name="com.example.stellantiscarapp.chargingstation.ChargingStationListFragment"
+        android:label="fragment_list_charger"
+        tools:layout="@layout/fragment_list_charger" />
+</navigation>
